@@ -14,60 +14,140 @@
   --white: rgb(255, 255, 255);
 }
 
-.navbar h2 {
-  color: var(--red-100);
+body {
+  background-color: var(--black);
+}
+
+
+.literata-bold {
+  font-family: "Literata", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .container {
-  background-color: var(--black);
-  font-size: 1.2rem;
-  height: 70px;
+  
 }
 
-.navbar {
+header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75rem 10%;
+  color: var(--red-100);
+  max-width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--red-100);
+}
+
+.nav-links li a:hover {
+  text-decoration: underline solid 5px var(--green-100);
+}
+
+.section {
+  width: 100vw;
+}  
+
+.image-bg {
+  flex: 1;
+  background-size: contain;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-section {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.menu-text {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.menu-text a {
+  text-decoration: none;
+  color: var(--red-100);
+  cursor: pointer;
+}
+
+.menu-pic {
+  flex: 1;
+  background-size: contain;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--white);
+  font-size: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer-icon img {
+  width: 20px;
+  margin-top: 0.25rem;
+  margin-left: 0.5rem;
+}
+
+.footer p {
+  display: flex;
+  margin-left: 1rem;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 80%;
-  margin: auto;
 }
 
-.navbar ul {
-  display: flex;
+.white {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.container .navbar {
-  justify-content: space-between;
+.red-100 {
+  color: var(--red-100);
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
 }
 
-.navbar ul li {
-  list-style-type: none;
+.green-100 {
+  color: var(--green-100);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
-
-.container .navbar ul li {
-  padding: 10px;
-  margin: 0 10px;
-}
-
-.navbar a {
-  color: var(--base);
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.navbar a:hover {
-  background-color: var(--base);
-  color: var(--red-400);
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: var(--green-100);
-  color: var(--base);
-  border-radius: 10px;
-}
-
 
